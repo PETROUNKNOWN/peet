@@ -110,7 +110,6 @@ body {
   font-family: Russo One;
   font-size: 2rem;
   padding: 1rem;
-  font-size: 1.3rem;
 }
 
 .hello {
@@ -132,7 +131,7 @@ body {
   transition-duration: 0.5s;
   color: var(--red);
   text-shadow: 0 0 6px var(--purple);
-  font-size: 2.08rem;
+  font-size: 2.3rem;
 }
 
 #project1 {
@@ -215,6 +214,15 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* text-align: center; */
+    /* padding-left: 2rem; */
+  }
+
+  #welcomeText {
+    font-family: Russo One;
+    font-size: 1.4rem;
+    margin-left: 4rem;
+    /* text-align: end; */
   }
   
   #project1 {
@@ -231,13 +239,6 @@ body {
     flex-direction: column;
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-  
-  #Footer {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -252,159 +253,28 @@ body {
     padding-top: 6rem;
     padding-bottom: 5rem;
   }
+
   
-  #project1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  #project2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-  }
-
-  #Footer {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #Footer a {
-    margin: 1rem;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    border: solid var(--purple) 0.2rem;
-    box-shadow: 0 0 50px var(--purple), 0 0 100px var(--purple);
-    transition-duration: 0.5s;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  #navbar {
-    top: 0;
-    width: auto;
-    height: 3rem;
-    z-index: 1;
-    display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(var(--white) 70%, rgba(255, 0, 0, 0));
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-  }
-  
-  #navbar a {
-    width: auto;
-    height: auto;
-    color: var(--purple);
-    padding: 0.2rem;
-    margin: -0.3rem 0.7rem;
-    border-radius: 0.7rem;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-family: Russo One;
-    transition-duration: 1s;
-    border: transparent solid 1px;
-  }
-  
   #welcome {
     padding-top: 6rem;
     padding-bottom: 5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--red);
   }
   
   #project {
     display: flex;
     justify-content: space-evenly;
   }
-  
-  #project1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  #project2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  #Footer {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #Footer a {
-    margin: auto 2rem;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    border: solid var(--purple) 0.2rem;
-    box-shadow: 0 0 50px var(--purple), 0 0 100px var(--purple);
-    transition-duration: 0.5s;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  #navbar {
-    top: 0;
-    width: auto;
-    height: 4rem;
-    z-index: 1;
-    display: flex;
-    position: sticky;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(var(--white) 70%, rgba(255, 0, 0, 0));
-    margin-top: -0.6rem;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
-  }
-  
-  #navbar a {
-    width: auto;
-    height: auto;
-    color: var(--purple);
-    padding: 0.3rem;
-    margin-top: -1.3rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    border-radius: 0.7rem;
-    text-decoration: none;
-    font-family: Russo One;
-    transition-duration: 1s;
-    border: transparent solid 1px;
-  }
-  
   #welcome {
-    height: 100vh;
-    display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: center;
-    color: var(--red);
-    padding-top: 0;
-    padding-bottom: 0;
   }
   
   #project1 {
@@ -420,24 +290,40 @@ body {
   #Footer {
     margin-top: 0rem;
     height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   #Footer a {
     margin: auto 3rem;
     padding: 0.6rem;
-    border-radius: 1rem;
-    border: solid var(--purple) 0.2rem;
-    box-shadow: 0 0 50px var(--purple), 0 0 100px var(--purple);
-    transition-duration: 0.5s;
   }
-  
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  #welcome {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--red);
+  }
+
+  #welcomeText {
+    font-family: Russo One;
+    font-size: 2.1rem;
+    padding: 1rem;
+  }
+
+  .hello {
+    font-size: 4rem;
+  }
+  
+  .web {
+    letter-spacing: 0.1rem;
+  }
+
   #project {
     display: flex;
     justify-content: space-evenly;
@@ -445,18 +331,10 @@ body {
   }
   
   #project1 {
-    display: flex;
-    align-items: center;
     flex-direction: row;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
   
   #project2 {
-    display: flex;
-    align-items: center;
     flex-direction: row;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 }
