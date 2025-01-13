@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Rubik Glitch|Righteous|Russo One|Smooch Sans|Strait|Sarpanch|Whisper|Gemunu Libre|Mr De Haviland|Rationale"
-      rel="stylesheet"
-    />
-    <title>peet</title>
-  </head>
-  <body>
-    <nav-bar id="navbar">
-      <a href="#welcome">HOME</a>
-      <a href="#project1">PROJECTS</a>
-      <a href="#Footer">CONTACT</a>
-      <div class="buttons">
-        <button class="darkMoon">
-          <box-icon name="moon" color="var(--purple)" size="1.7rem"></box-icon>
-        </button>
-        <button class="lightSun">
-          <box-icon name="sun" color="var(--purple)" size="2rem"></box-icon>
-        </button>
-      </div>
-    </nav-bar>
-    <div id="welcome">
-      <div id="profilePic">
-        <img src="Pics/peet.png" class="Pic" />
-      </div>
-      <div id="welcomeText">
-        <span class="hello">Hello</span> My name is Peter.<br /> I am a
-        <span class="web">SOFTWARE ENGINEER</span><br />
-      </div>
-    </div>
-    <div id="project1">
-      <div class="Projecttile">dealership</div>
-      <div class="Projecttile"></div>
-      <div class="Projecttile"></div>
-    </div>
-    <div class="spaceProject"></div>
-    <div id="project2">
-      <div class="Projecttile"></div>
-      <div class="Projecttile"></div>
-      <div class="Projecttile"></div>
-    </div>
-    <footer id="Footer">
-      <a
-        href="https://github.com/PETROUNKNOWN"
-        id="profile-link"
-        target="_blank"
-        ><box-icon
-          type="logo"
-          name="github"
-          color="var(--purple)"
-          size="2rem"
-        ></box-icon
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/petrounknown/"
-        id="profile-link"
-        target="_blank"
-        ><box-icon
-          type="logo"
-          name="linkedin"
-          color="var(--purple)"
-          size="2rem"
-        ></box-icon
-      ></a>
-      <a
-        href="https://twitter.com/petrounknown"
-        id="profile-link"
-        target="_blank"
-        ><box-icon
-          type="logo"
-          name="twitter"
-          color="var(--purple)"
-          size="2rem"
-        ></box-icon
-      ></a>
-      <a
-        href="https://codepen.io/peet-the-vuer"
-        id="profile-link"
-        target="_blank"
-        ><box-icon
-          type="logo"
-          name="codepen"
-          color="var(--purple)"
-          size="2rem"
-        ></box-icon
-      ></a>
-      <a
-        href="https://www.freecodecamp.org/fcc8472afbc-a7e2-455c-bbb7-b1287e104086"
-        id="profile-link"
-        target="_blank"
-        ><box-icon name="code-alt" color="var(--purple)" size="2rem"></box-icon
-      ></a>
-    </footer>
-    <div class="sign">peet2024</div>
-  </body>
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Once Upon A Time</title>
+        <link href="https://fonts.googleapis.com/css?family=Rubik Glitch|Righteous|Russo One|Smooch Sans|Strait|Sarpanch|Whisper|Gemunu Libre|Mr De Haviland|Rationale" rel="stylesheet"/>
+        <link rel="stylesheet" href="newStyle.css" />
+    </head>
+    <body>
+        <div class="welcomePage">
+            <div class="imageContainer"><img src="Pics/peet.png" alt="a picture"></div>  
+            <p>A portfolio</p>
+        </div>
+        <div class="projectsPage">
+            <p class="projectPageTitle" title="some of it, obviously">My Work</p>
+            <div class="gridContainer">
+                <div class="project-card">
+                    <img src="Pics/anubisScreen.png" alt="Project Image">
+                    <div class="project-card-content">
+                      <h3 class="project-title">Anubis</h3>
+                      <p class="project-description">
+                        A page displaying the ancient god Anubis. <br>It is contained in the Eye of Horus Collection.
+                      </p>
+                      <a href="https://petrounknown.github.io/Anubis/" class="view-more-btn"  target="_blank" title="Website">    Visit    </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="Pics/artScreen.png" alt="Project Image">
+                    <div class="project-card-content">
+                      <h3 class="project-title">Art Dealership</h3>
+                      <p class="project-description">
+                        A dealership's webpage. <br>Clients can browse avaiable superbikes.
+                      </p>
+                      <a href="https://petrounknown.github.io/Art_Dealership_Site/" class="view-more-btn" target="_blank" title="Website">    Visit    </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="Pics/blueTheme.png" alt="Project Image">
+                    <div class="project-card-content">
+                      <h3 class="project-title">Matriks</h3>
+                      <p class="project-description">
+                        A PC GUI application. <br>It displays a grid on the screen. <br>Its useful for scripters and homing devices.
+                      </p>
+                      <a href="https://github.com/PETROUNKNOWN/matriks" class="view-more-btn" target="_blank" title="GitHub">    Visit    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projectsPage2">
+            <p class="projectPageTitle">My Style</p>
+            <div class="gridContainer">
+                <div class="project-card">
+                    <a href="Pics/artisticVentures.png"target="_blank"><img src="Pics/artisticVentures.png" alt="Project Image"></a>
+                    <div class="project-card-content">
+                      <h3 class="project-title">Artistic Ventures</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="Pics/elegance.png"target="_blank"><img src="Pics/elegance.png" alt="Project Image"></a>
+                    <div class="project-card-content">
+                      <h3 class="project-title">Elegant Visage</h3>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="Pics/utilityFoSho.png"target="_blank"><img src="Pics/utilityFoSho.png" alt="Project Image"></a>
+                    <div class="project-card-content">
+                      <h3 class="project-title">Utilitarian</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contactPage">
+            <div class="contact-card">
+                <img src="Pics/whatami.png" alt="a picture" class="profilePic">
+                <div class="seperator"></div>
+                <div class="detailsSection">
+                    <p>thepeet@proton.me</p>
+                    <div>
+                        <a href="https://github.com/PETROUNKNOWN"target="_blank" title="GitHub"><box-icon type="logo"name="github"color="var(--purple)"size="2.5rem"></box-icon></a>
+                        <a href="https://twitter.com/petrounknown"target="_blank" title="X"><box-icon type="logo"name="twitter"color="var(--purple)"size="2.5rem"></box-icon></a>
+                        <a href="#"title="petrounknown@gmail.com"><box-icon type="logo"name="gmail"color="var(--purple)"size="2.5rem"></box-icon></a>
+                    </div>
+                    <p class="myLanguages">PYTHON - JAVA - RUST</p>
+                </div>
+              </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- <script src="script.js"></script> -->
 </html>

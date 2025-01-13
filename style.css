@@ -9,153 +9,119 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  /* font-family: Russo One; */
 }
-
 ::-webkit-scrollbar {
   display: none;
 }
 
 body {
+  /* height: 100vh; */
   background-color: var(--white);
   color: var(--white);
   background-image: linear-gradient(
-    to bottom left,
-    var(--white) 50%,
-    var(--otherpurple) 150%
+      to bottom left,
+      var(--white) 40%,
+      var(--otherpurple) 140%
   );
   transition: 0.5s;
 }
 
-#navbar {
-  top: 0;
-  width: auto;
-  height: 3rem;
-  z-index: 1;
-  display: flex;
-  position: sticky;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(var(--white) 70%, rgba(255, 0, 0, 0));
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
-
-#navbar a {
-  width: auto;
-  height: auto;
-  color: var(--purple);
-  padding: 0.2rem;
-  margin: -0.3rem 0.7rem;
-  border-radius: 0.7rem;
-  text-decoration: none;
-  font-size: 0.1rem;
-  font-family: Russo One;
-  transition-duration: 1s;
-  border: transparent solid 1px;
-}
-
-#navbar #mode {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  margin-top: -1.3rem;
-  right: 0;
-}
-
-#navbar .buttons {
-  position: absolute;
-  right: 0;
-  background-color: transparent;
-}
-
-#navbar .buttons .darkMoon {
-  background-color: transparent;
-  border: none;
-  display: ;
-}
-
-#navbar .buttons .lightSun {
-  background-color: transparent;
-  border: none;
-  display: ;
-}
-
-#welcome {
+.welcomePage{
   height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  color: var(--red);
-
+  justify-content: center;
+  /* flex-direction: row; */
+  color: var(--purple);
+  font-family: Russo One;
 }
 
-#profilePic img {
+.imageContainer {
+  /* border: var(--purple) 5px solid; */
+  background-color: var(--purple);
+  border-radius: 50px;
+  height: 260px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s;
+}
+
+.imageContainer img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(1);
   border-radius: 50px;
   height: 250px;
   width: 250px;
   transition-duration: 1s;
+  border: var(--purple) 1px solid;
 }
 
-#profilePic img:hover {
+.imageContainer img:hover {
   transition-duration: 1s;
   filter: grayscale(0%);
   -webkit-filter: grayscale(0);
 }
 
-#welcomeText {
-  font-family: Russo One;
-  font-size: 2rem;
+.welcomePage p {
+  text-shadow: 0 0 5px var(--purple);
+  font-size: 2.1rem;
   padding: 1rem;
 }
 
-.hello {
+.projectsPage {
+  margin: 0 auto 10rem auto;
+  /* height: 100vh; */
+  /* width: 100vw; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  
+  color: var(--purple);
   font-family: Russo One;
-  font-size: 3rem;
-  color: var(--purple);
-  text-shadow: 0 0 5px var(--purple);
-  transition-duration: 1s;
+  /* width: 50%; */
 }
 
-.web {
-  letter-spacing: 0.1rem;
-  color: var(--purple);
-  text-shadow: 0 0 5px var(--purple);
-  transition-duration: 0.5s;
-}
-
-.web:hover {
-  transition-duration: 0.5s;
-  color: var(--red);
-  text-shadow: 0 0 6px var(--purple);
-  font-size: 2.3rem;
-}
-
-#project1 {
+.projectsPage2 {
+  /* height: 100vh; */
+  /* width: 100vw; */
   display: flex;
   align-items: center;
+  /* justify-content: center; */
   flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-
+  
+  color: var(--purple);
+  font-family: Russo One;
+  /* width: 50%; */
 }
 
-#project2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 
+.gridContainer {
+  /* height: 100vh; */
+  /* width: 50%; */
+  display: grid;
+  grid-template-columns:auto auto auto;
+  gap: 3rem;
+  /* border: 1px solid #000; */
 }
 
-.Projecttile {
-  margin: 3rem auto auto auto;
-  height: 15rem;
-  width: 20rem;
+.projectPageTitle  {
+  font-size: 1.9rem;
+  cursor: pointer;
+  /* display: none; */
+}
+
+
+.projectTile {
+  /* margin-top: 10px; */
+  /* margin: 3rem auto auto auto; */
+  height: 300px;
+  width: 450px;
   border: 2px solid var(--purple);
   border-radius: 20px;
   background-image: linear-gradient(
@@ -164,177 +130,149 @@ body {
     var(--otherpurple) 200%
   );
   transition-duration: 1s;
+  /* background-image: url("Pics/anubisScreen.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.Projecttile:hover {
+/* .projectTile:hover .projectsPage {
   transform: translateY(-0.6rem) scale(1.05);
   transition-duration: 1s;
+} */
+
+/* .projectTile:hover{ .projectsPage {
+  background-color: var(--black);
+}} */
+
+.project-card {
+  /* margin: 3rem auto auto auto; */
+  /* height: min-content; */
+  width: 400px;
+  background: transparent;
+  border: 1px solid #ffffff3a;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform .5s ease, box-shadow 0.5s ease;
+  /* background-image: linear-gradient(
+    to bottom,
+    transparent 70%,
+    var(--otherpurple) 100%
+  ); */
 }
 
-.spaceProject {
-  height: 15rem;
+.project-card:hover {
+  /* transform: translateY(-8px); */
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.2rem) scale(1.009);
+  /* transition-duration: .5s; */
 }
 
-#Footer {
-  height: auto;
+.project-card img {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  opacity: 0.9;
+  transition-duration: .5s
+}
+
+.project-card:hover img {
+  opacity: 1;
+}
+
+.project-card-content {
+  padding: 16px;
+}
+
+.project-title {
+  font-size: 1.5em;
+  /* font-weight: bold; */
+  color: var(--purple);
+  text-shadow: 0 0 3px var(--purple);
+  margin: 0;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 0.95em;
+  color: #444;
+  margin: 8px 0 16px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.view-more-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--purple);
+  color: white;
+  box-shadow: 0 0px 10px var(--purple);
+  /* box-shadow: 0 0 30px var(--white); */
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  transition: 0.3s ease;
+}
+
+.view-more-btn:hover {
+  /* background: #0056b3; */
+  box-shadow: 0 0px 20px var(--red);
+}
+
+.contactPage {
+  margin-top: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#Footer a {
-  margin: 1rem;
-  padding: 0.3rem;
-  border-radius: 1rem;
-  border: solid var(--purple) 0.2rem;
-  box-shadow: 0 0 50px var(--purple), 0 0 100px var(--purple);
-  transition-duration: 0.5s;
-}
-
-#Footer a:hover {
-  transition-duration: 0.5s;
-  border: solid var(--purple) 0.17rem;
-  box-shadow: 0 0 70px var(--purple), 0 0 15px var(--purple);
-}
-
-.sign {
+  /* flex-direction: column; */
   color: var(--purple);
-  text-align: end;
-  font-family: Rationale;
+  font-family: Russo One;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #navbar a {
-    font-size: 0.1rem;
-  }
-  
-  #welcome {
-    padding-top: 6rem;
-    padding-bottom: 5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    /* text-align: center; */
-    /* padding-left: 2rem; */
-  }
-
-  #welcomeText {
-    font-family: Russo One;
-    font-size: 1.4rem;
-    margin-left: 4rem;
-    /* text-align: end; */
-  }
-  
-  #project1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  
-  #project2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
+.contact-card {
+  display: flex;
+  align-items: center;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* border: var(--purple) 1px solid;
+  box-shadow: 0 0px 10px var(--purple);
+  border-radius: 12px;
+  padding: 1rem; */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
-  #navbar a {
-    font-size: 0.1rem;
-  }
-  
-  #welcome {
-    padding-top: 6rem;
-    padding-bottom: 5rem;
-  }
-
-  
+.profilePic {
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  border-radius: 50px;
+  height: 150px;
+  width: 150px;
+  transition-duration: 1s;
+  user-select: none;
+  /* opacity: 0.5; */
+  /* transition-duration: .5s */
+  /* border: var(--purple) 1px solid; */
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #welcome {
-    padding-top: 6rem;
-    padding-bottom: 5rem;
-  }
-  
-  #project {
-    display: flex;
-    justify-content: space-evenly;
-  }
+.profilePic:hover {
+  transition-duration: 1s;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #welcome {
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  #project1 {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  #project2 {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  #Footer {
-    margin-top: 0rem;
-    height: 20rem;
-  }
-
-  #Footer a {
-    margin: auto 3rem;
-    padding: 0.6rem;
-  }
+.seperator{
+  height: 12rem;
+  margin: auto .3rem auto 1.5rem;
+  border: var(--purple) 1px solid;
+  box-shadow: 0 0 3px 1px var(--purple);
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #welcome {
-    height: 100vh;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    color: var(--red);
-  }
+.detailsSection {
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
 
-  #welcomeText {
-    font-family: Russo One;
-    font-size: 2.1rem;
-    padding: 1rem;
-  }
-
-  .hello {
-    font-size: 4rem;
-  }
-  
-  .web {
-    letter-spacing: 0.1rem;
-  }
-
-  #project {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
-  
-  #project1 {
-    flex-direction: row;
-  }
-  
-  #project2 {
-    flex-direction: row;
-  }
+.myLanguages {
+  font-size: 0.7rem;
 }
