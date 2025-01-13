@@ -16,13 +16,13 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--white);
     color: var(--white);
     background-image: linear-gradient(
         to bottom left,
-        var(--white) 50%,
-        var(--otherpurple) 150%
+        var(--white) 40%,
+        var(--otherpurple) 140%
     );
     transition: 0.5s;
 }
@@ -71,4 +71,9 @@ body {
     text-shadow: 0 0 5px var(--purple);
     font-size: 2.1rem;
     padding: 1rem;
+}
+
+.detailsPage {
+    height: 100vh;
+    width: 100vw;
 }
