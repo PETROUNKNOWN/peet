@@ -1,0 +1,74 @@
+:root {
+    --purple: #8c52ff;
+    --black: #000000;
+    --red: #ff528c;
+    --otherred: #330011;
+    --white: #fae5ff;
+    --otherpurple: #aa80ff;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* font-family: Russo One; */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--white);
+    color: var(--white);
+    background-image: linear-gradient(
+        to bottom left,
+        var(--white) 50%,
+        var(--otherpurple) 150%
+    );
+    transition: 0.5s;
+}
+
+.welcomePage{
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+    color: var(--purple);
+    font-family: Russo One;
+}
+
+.imageContainer {
+    /* border: var(--purple) 5px solid; */
+    background-color: var(--purple);
+    border-radius: 50px;
+    height: 260px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+
+.imageContainer img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(1);
+    border-radius: 50px;
+    height: 250px;
+    width: 250px;
+    transition-duration: 1s;
+    border: var(--purple) 1px solid;
+}
+
+.imageContainer img:hover {
+    transition-duration: 1s;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0);
+}
+
+.welcomePage p {
+    text-shadow: 0 0 5px var(--purple);
+    font-size: 2.1rem;
+    padding: 1rem;
+}
