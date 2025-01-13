@@ -73,7 +73,40 @@ body {
     padding: 1rem;
 }
 
-.detailsPage {
-    height: 100vh;
-    width: 100vw;
+.projectsPage {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    color: var(--purple);
+    font-family: Russo One;
+}
+
+.projectsPage p {
+    text-align: right;
+}
+
+
+.projectTile {
+    margin: 3rem auto auto auto;
+    height: 300px;
+    width: 450px;
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      var(--otherpurple) 200%
+    );
+    transition-duration: 1s;
+    /* background-image: url("Pics/anubisScreen.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+  
+.projectTile:hover {
+    transform: translateY(-0.6rem) scale(1.05);
+    transition-duration: 1s;
 }
